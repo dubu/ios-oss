@@ -3489,21 +3489,24 @@
 					};
 					A7D1F9441C850B7C000D41D5 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 48YBP49Y5N;
+						DevelopmentTeam = 5L3PCCAY6K;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
 							com.apple.OMC = {
 								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.SafariKeychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -4916,8 +4919,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 5DAN4UM3NC;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -4957,10 +4958,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon-beta";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Kickstarter-iOS/Hockey.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5DAN4UM3NC;
+				DEVELOPMENT_TEAM = 5L3PCCAY6K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/HockeySDK/iOS/HockeySDK.embeddedframework",
@@ -4973,11 +4973,11 @@
 					"$(PROJECT_DIR)/Frameworks/FBSDK/iOS",
 				);
 				INFOPLIST_FILE = "Kickstarter-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kickstarter.kickstarter.beta;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dubu.dubu;
 				PRODUCT_MODULE_NAME = Kickstarter_iOS;
 				PRODUCT_NAME = KickBeta;
-				PROVISIONING_PROFILE_SPECIFIER = circleci;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Kickstarter-iOS/Kickstarter-iOS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5458,11 +5458,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon-debug";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Kickstarter-iOS/Debug.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 48YBP49Y5N;
+				DEVELOPMENT_TEAM = 5L3PCCAY6K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/HockeySDK/iOS/HockeySDK.embeddedframework",
@@ -5475,11 +5473,11 @@
 					"$(PROJECT_DIR)/Frameworks/FBSDK/iOS",
 				);
 				INFOPLIST_FILE = "Kickstarter-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kickstarter.kickstarter.alpha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dubu.dubu;
 				PRODUCT_MODULE_NAME = Kickstarter_iOS;
 				PRODUCT_NAME = KickDebug;
-				PROVISIONING_PROFILE_SPECIFIER = "Alpha Development";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Kickstarter-iOS/Kickstarter-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -5493,10 +5491,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Kickstarter-iOS/Release.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 48YBP49Y5N;
+				DEVELOPMENT_TEAM = 5L3PCCAY6K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/HockeySDK/iOS/HockeySDK.embeddedframework",
@@ -5508,10 +5505,10 @@
 					"$(PROJECT_DIR)/Frameworks/FBSDK/iOS",
 				);
 				INFOPLIST_FILE = "Kickstarter-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kickstarter.kickstarter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dubu.dubu;
 				PRODUCT_MODULE_NAME = Kickstarter_iOS;
-				PROVISIONING_PROFILE_SPECIFIER = AppStore;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Kickstarter-iOS/Kickstarter-iOS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5577,7 +5574,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 48YBP49Y5N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -5633,8 +5629,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 48YBP49Y5N;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";

@@ -54,7 +54,7 @@ public final class KoalaTrackingClient: TrackingClientType {
 
   public func track(event: String, properties: [String:Any]) {
     #if DEBUG
-      NSLog("[Koala Track]: \(event), properties: \(properties)")
+//      NSLog("[Koala Track]: \(event), properties: \(properties)")
     #endif
 
     self.queue.async {
